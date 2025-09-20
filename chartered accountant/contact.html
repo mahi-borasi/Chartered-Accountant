@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - CA Firm</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">CA Firm</div>
+      <div class="hamburger" onclick="toggleMenu()" id="hamburgerIcon">
+  &#9776;
+</div>
+<div class="close-icon" onclick="toggleMenu()" id="closeIcon">
+  &times;
+</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-container">
+      <form action="contact" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Office Address</h3>
+        <p>123 Business Street,<br>Indore, Madhya Pradesh - 452001</p>
+        <p>Email: info@cafirm.com<br>Phone: +91-9876543210</p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CA Firm. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQ - CA Firm</title>
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">CA Firm</div>
+       <div class="hamburger" onclick="toggleMenu()" id="hamburgerIcon">
+  &#9776;
+</div>
+<div class="close-icon" onclick="toggleMenu()" id="closeIcon">
+  &times;
+</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq">
+        <button class="faq-question">What services do you provide?</button>
+        <div class="faq-answer">
+          <p>We provide audit, tax consultancy, financial planning, GST registration, and more.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">Do you offer virtual consultations?</button>
+        <div class="faq-answer">
+          <p>Yes, we offer both in-person and virtual consultations as per client preference.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">What are your charges?</button>
+        <div class="faq-answer">
+          <p>Our charges vary based on service type. Please contact us for a custom quote.</p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">How can I book an appointment?</button>
+        <div class="faq-answer">
+          <p>You can book an appointment through our contact form or call our office directly.</p>
+        </div>
+      </div>
+    
+
+    <div class="faq">
+        <button class="faq-question">What documents are required for ITR filing?</button>
+        <div class="faq-answer">
+        <p>Documents include Form 16, PAN card, Aadhaar card, bank statements, and investment proofs.</p>
+      </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">What is the due date for filing income tax returns?</button>
+        <div class="faq-answer">
+        <p>For individuals, the usual due date is July 31st of the assessment year.</p>
+      </div>
+      </div>
+
+
+      <div class="faq">
+         <button class="faq-question">Can I file my taxes without a CA?</button>
+        <div class="faq-answer">
+        <p>Yes, but hiring a CA ensures compliance, accuracy, and savings through proper planning.</p>
+      </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question">Can you assist with startup financial planning?</button>
+       <div class="faq-answer">
+        <p>Yes, we help startups with budgeting, projections, valuation, and fundraising compliance.</p>
+      </div>
+      </div>
+
+
+      <div class="faq">
+        <button class="faq-question">What is the penalty for late ITR filing?</button>
+       <div class="faq-answer">
+        <p>Late filing penalty ranges from ₹1,000 to ₹5,000 under Section 234F, based on your income.</p>
+      </div>
+      </div>
+
+      <div class="faq">
+        <button class="faq-question"> Do you assist with GST registration and filing?</button>
+       <div class="faq-answer">
+        <p>Yes, we offer complete GST services including registration, monthly/quarterly return filing, and compliance support.</p>
+      </div>
+      </div>
+</div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CA Firm. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const faqs = document.querySelectorAll('.faq-question');
+    faqs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const answer = btn.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

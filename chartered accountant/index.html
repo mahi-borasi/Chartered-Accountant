@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - CA Firm</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><h1>CA Firm</h1></div>
+     <div class="hamburger" onclick="toggleMenu()" id="hamburgerIcon">
+  &#9776;
+</div>
+<div class="close-icon" onclick="toggleMenu()" id="closeIcon">
+  &times;
+</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1 class="animate fade-slide heading">Welcome to Our CA Firm</h1>
+      <p class="animate fade-slide paragraph subtitle">ITR | GST | Audit | Financial Advisory — <br> All in One Place</p>
+      <a href="services.html" class="btn animate button">Explore Services</a>
+      
+    </div>
+    <div class="hero-image">
+      <img src="background image1.jpg" alt="CA Image" />
+    </div>
+  </section>
+
+
+</body>
+</html>
+
+  <section class="services-overview">
+    <h2>Our Core Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <h3>Audit & Assurance</h3>
+        <p>Providing accurate financial audits and compliance services for companies of all sizes.</p>
+      </div>
+      <div class="service-box">
+        <h3>Tax Planning</h3>
+        <p>Effective strategies for corporate and personal tax planning, GST, and returns.</p>
+      </div>
+      <div class="service-box">
+        <h3>Business Advisory</h3>
+        <p>Helping businesses grow with proper budgeting, forecasting, and investment planning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-choose-us">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>✔ 20+ Years of Industry Experience</li>
+      <li>✔ 1000+ Happy Clients Across India</li>
+      <li>✔ Certified and Experienced Professionals</li>
+      <li>✔ Transparent, Affordable Pricing</li>
+    </ul>
+  </section>
+
+  <section class="stats-section">
+  <div class="stat-box animate delay-1">
+    <img src="rating.png" alt="Experience Icon">
+    <h2>20+</h2>
+    <p>Years of experience</p>
+  </div>
+  <div class="stat-box animate delay-2">
+    <img src="customer-service.png" alt="Services Icon">
+    <h2>100+</h2>
+    <p>Services We Offers</p>
+  </div>
+  <div class="stat-box animate delay-3">
+    <img src="countries.png" alt="Countries Icon">
+    <h2>5+</h2>
+    <p>Countries Operations</p>
+  </div>
+  <div class="stat-box animate delay-4">
+    <img src="businessman.png" alt="Professionals Icon">
+    <h2>100+</h2>
+    <p>Professionals</p>
+  </div>
+  <div class="stat-box animate delay-5">
+    <img src="public-relation.png" alt="Clients Icon">
+    <h2>1000+</h2>
+    <p>Happy Clients</p>
+  </div>
+</section>
+
+  <section class="testimonial-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <p>"Very professional and helpful team. Their financial guidance really helped my business grow."</p>
+        <h4>- Rahul Mehta</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Excellent support for tax filing and GST services. Highly recommend their services!"</p>
+        <h4>- Priya Sharma</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"One of the best CA firms I've worked with. Transparent, honest, and quick response time."</p>
+        <h4>- Ankit Verma</h4>
+      </div>
+    </div>
+  </section>
+
+  
+<section class="consultation">
+  <h2>Empowering Your Financial Success.</h2>
+  <a href="contact.html" class="cta-button">Book a Consultation</a>
+</section>
+
+
+  <footer class="footer"> 
+    <p>&copy; 2025 CA Firm. All rights reserved.</p>
+  </footer>
+
+
+  <script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  document.querySelectorAll('.animate-on-scroll').forEach(elem => {
+    observer.observe(elem);
+  });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
+
